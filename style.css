@@ -1,0 +1,591 @@
+
+@font-face {
+    font-family: roboto-custom;
+    src: url(Roboto-Thin.ttf);
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: roboto-custom; /*geneva, verdana, arial;*/
+}
+
+button
+{
+	cursor: pointer;
+}
+
+.background, .background img
+{
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	transition: left 0.3s ease-out;
+	display: flex;
+	background-color: #424242;
+}
+
+.side-door
+{
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left: 0;
+	width: 25%;
+	height: 100%;
+	z-index: -1;
+	display: flex;
+	transition: left 0.6s ease-out;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.overlayer
+{
+	background-color: white;
+	opacity: 0.3;
+	z-index: -2;
+}
+
+.form, .countdown
+{
+	
+	align-self: center;
+	justify-content: center;
+	width: 100%;
+	z-index: 50;
+	position: relative;
+	top: 65px;
+	left: none !important;
+}
+
+.form form input
+{
+	display: block;
+	width: 90%;
+	margin: auto;
+	font-size: 18px;
+	border-radius: 6px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.form a
+{
+	display: block;
+	width: 80%;
+	margin: auto;
+	margin-top: 20px;
+	color: black;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 100;
+	cursor: pointer;
+}
+
+.form a:hover
+{
+	text-decoration: underline;
+}
+
+.submit-button
+{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: 0;
+	border-radius: 10px;
+	font-size: 20px;
+	background-color: #167AC6;
+	cursor: pointer;
+}
+
+.form form input+input
+{
+	margin-top: 10px;
+}
+
+.ieeelogo
+{
+	position: absolute;
+	bottom: 10px;
+	left: 5px;
+	width: 200px;
+}
+
+.menu-button
+{
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	z-index: 30;
+}
+
+.side-menu-bar
+{
+	position: absolute;
+	top: 0;
+	left: -25%;
+	bottom: 0;
+	width: 25%;
+	display: flex;
+	background: #36474f;
+	background: -moz-radial-gradient(center, ellipse cover, #36474f 1%, #2e3b43 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #36474f 1%,#2e3b43 100%);
+	background: radial-gradient(ellipse at center, #36474f 1%,#2e3b43 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36474f', endColorstr='#2e3b43',GradientType=1 );
+	transition: left 0.3s ease-out;
+}
+
+.side-menu-bar ul
+{
+	align-self: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.countdown div
+{
+	display: inline-block;
+}
+
+#hour, #minutes, #seconds, .colan
+{
+	line-height: 15px;
+}
+
+.countdown, .head-of-countdown
+{
+	width: 100%;
+	text-align: center;
+	font-size: 35px;
+	color: black;
+}
+
+.head-of-countdown
+{
+	display: block;
+	font-size: 30px;
+}
+
+.countdown div span
+{
+	font-size: 12px;
+}
+
+.side-menu-bar ul li img
+{
+	vertical-align: middle;
+	width: 30px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.side-menu-bar ul li
+{
+	cursor: pointer;
+	font-size: 25px;
+	color: white;
+	padding: 5px 0;
+}
+
+.side-menu-bar ul li:hover
+{
+	background-color: #232e32;
+}
+
+
+.main-iframe
+{
+	width: 80%;
+	margin: auto;
+	height: 90%;
+	align-self: center;
+}
+
+.main-iframe iframe
+{
+	background-color: rgba(0,0,0,0.7);
+	border: 0;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+}
+
+.iframe-body
+{
+	
+	background-color: transparent;
+	text-align: center;
+	color: white;
+}
+
+.iframe-body h1
+{
+	margin-bottom: 10px;
+	font-size: 40px;
+	text-shadow: 0 0 10px black;
+	font-weight: 100;
+}
+
+.questions-images
+{
+	width: 100%;
+}
+
+.questions-images img
+{
+	heisght: 200px;
+	vertical-align: middle;
+}
+
+.questions-images img:first-child:nth-last-child(1)
+{
+	width: 40%;
+	margin: auto;
+	heisght: auto;
+}
+
+.questions-images img:first-child:nth-last-child(2), 
+.questions-images img:first-child:nth-last-child(2) ~ img
+{
+	width: 30%;
+	margin: auto;
+}
+
+.questions-images img:first-child:nth-last-child(3),
+.questions-images img:first-child:nth-last-child(3) ~ img
+{
+	width: 30%;
+	margin: auto;
+}
+
+.questio
+{
+	width: 40%;
+	margin: auto;
+	margin-top: 20px !important;
+}
+
+.questions-images img+img
+{
+	margin-left: 20px !important;
+}
+
+.answerForm, .answerForm input
+{
+	color: white;
+	font-size: 40px;
+	font-weight: 100;
+}
+
+.answerForm
+{
+	width: 95%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.answerForm input
+{
+	background-color: transparent;
+	border: 0;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	font-weight: 300;
+	border-bottom: solid 2px white;
+	width: 60%;
+}
+
+.answerForm .subButt, .subButt
+{
+	bacskground-color: #007FC4;
+	border: 0;
+	cursor: pointer;
+	borsder-radius: 5px;
+	box-shasdow: 0 0 10px black;
+	width: 20%;
+	max-width: 50px;
+	margin-left: 15px;
+	height: 50px;
+	font-size: 35px;
+}
+
+.answerForm .subButt + .subButt
+{
+	margin-left: 5px;
+}
+
+.hint
+{
+	text-align: center;
+	width: 100%;
+}
+
+@keyframes rotatee
+{
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes rotatee
+{
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+
+@keyframes rotatee-clock
+{
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(710000deg);}
+}
+
+@-webkit-keyframes rotatee-clock
+{
+	0% {transform:rotate(0deg);} 
+	100% {transform:rotate(710000deg);}
+}
+
+@keyframes rotatee-clock2
+{
+	0% {transform:rotate(0deg);} 
+	100% {transform:rotate(-540000deg);}
+}
+
+@-webkit-keyframes rotatee-clock2
+{
+	0% {transform:rotate(0deg);} 
+	100% {transform:rotate(-540000deg);}
+}
+
+@keyframes rotatee-clock3
+{
+	0% {transform:rotate(0deg);} 
+	100% {transform:rotate(360000deg);}
+}
+
+@-webkit-keyframes rotatee-clock3
+{
+	0% {transform:rotate(0deg);} 
+	100% {transform:rotate(360000deg);}
+}
+
+
+
+
+
+
+
+.logooo
+{
+	animation:rotatee 1s;
+	animation-iteration-count:infinite;
+	-webkit-animation:rotatee 1s;
+	-webkit-animation-iteration-count:infinite;
+	position: absolute;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.logoo
+{
+	width: 100%;
+	display: block;
+	position: absolute;
+}
+
+.red-wrong-heading
+{
+	color: red;
+}
+
+#rotating-div
+{
+	position: static;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+#rotating-div img
+{
+	position: static;
+	width: 20%;
+	display: block;
+	margin-left: 40%;
+}
+
+.score-bar
+{
+	font-size: 25px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.score-bar span
+{
+	font-size: 13px;
+}
+
+
+
+.animated-logo
+{
+	width: 70%;
+	margin-left: 15%;
+	position: absolute;
+	top: 20px;
+}
+
+.animated-logo div img
+{
+	position: absolute;
+	width: 100%;
+}
+
+.clock
+{
+	animation:rotatee-clock 1750s;
+	animation-iteration-count:infinite;
+	-webkit-animation:rotatee-clock 1750s;
+	-webkit-animation-iteration-count:infinite;
+}
+
+.clock2
+{
+	animation:rotatee-clock2 1750s;
+	animation-iteration-count:infinite;
+	-webkit-animation:rotatee-clock2 1750s;
+	-webkit-animation-iteration-count:infinite;
+}
+
+.clock3
+{
+	animation:rotatee-clock3 1750s;
+	animation-iteration-count:infinite;
+	-webkit-animation:rotatee-clock3 1750s;
+	-webkit-animation-iteration-count:infinite;
+}
+
+
+@media only screen and (max-width: 1000px)
+{
+	.side-menu-bar ul li
+	{
+		font-size: 20px;
+	}
+
+	.side-menu-bar ul li img
+	{
+		width: 30px;
+		margin-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 750px)
+{
+
+	.side-door, .side-door, .overlayer
+	{
+		width: 100%;
+	}
+
+	.form a
+	{
+		font-size: 20px;
+	}
+
+	.side-menu-bar
+	{
+		left: -90%;
+		bottom: 0;
+		width: 90%;
+	}
+
+	.side-menu-bar ul li
+	{
+		font-size: 30px;
+	}
+
+	.side-menu-bar ul li img
+	{
+		width: 50px;
+		margin-left: 20px;
+	}
+
+	.main-iframe
+	{
+		width: 100%;
+		height: 100%;
+	}
+
+	.questions-images img
+	{
+		width: 80% !important;
+		display: block !important;
+		margin: 0 10% !important;
+	}
+
+	.questions-images img+img
+	{
+		margin-left: 10% !important;
+		margin-top: 10px !important;
+	}
+
+	.answerForm input
+	{
+		width: 40%;
+	}
+
+	.answerForm, .answerForm input
+	{
+		font-size: 20px;
+	}
+
+	.answerForm .subButt
+	{
+		width: 15%;
+	}
+
+	.logooo
+	{
+		animation:rotatee 1s;
+		animation-iteration-count:infinite;
+		-webkit-animation:rotatee 1s;
+		-webkit-animation-iteration-count:infinite;
+		position: absolute;
+		width: 60%;
+		margin-left: 20%;
+	}
+
+	.animated-logo
+	{
+		width: 50%;
+		display: block;
+		position: absolute;
+		margin-left: 25%;
+	}
+
+	#rotating-div img
+	{
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	.animated-logo > img
+	{
+		top: 130px;
+	}
+	
+
+}
